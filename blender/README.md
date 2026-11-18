@@ -23,3 +23,11 @@ Kommandorad: `blender -b herrgard_moblerad.blend -E CYCLES -- --cycles-device HI
 - Material: byt procedurella texturer mot PBR-set (travertin, rökt ek, kalkputs)
 - Detaljer: taklister, fönstersmygar, gardiner, växter, böcker, textil
 - Kameran: lens 24 mm, lägg till lätt depth of field
+
+## Hämta scenen på servern
+```bash
+git clone https://github.com/gustafboman0607-code/herrgard-ref.git
+cd herrgard-ref
+cat blend/herrgard_moblerad.blend.part* > herrgard_moblerad.blend
+sha256sum -c <(echo "$(cat blend/SHA256)  herrgard_moblerad.blend")
+```
