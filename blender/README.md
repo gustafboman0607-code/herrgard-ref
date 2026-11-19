@@ -28,6 +28,6 @@ Kommandorad: `blender -b herrgard_moblerad.blend -E CYCLES -- --cycles-device HI
 ```bash
 git clone https://github.com/gustafboman0607-code/herrgard-ref.git
 cd herrgard-ref
-cat blend/herrgard_v3.blend.part* > herrgard_v3.blend
+cat blend/herrgard_v4.blend.part* > herrgard_v4.blend
 sha256sum -c <(echo "$(cat blend/SHA256)  herrgard_moblerad.blend")
 ```
